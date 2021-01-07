@@ -1,3 +1,4 @@
+输出0到100内的奇数
 #include <stdio.h>
 
 int main()
@@ -29,7 +30,7 @@ int main()
 
 
 
-
+输出星期
 #include <stdio.h>
 
 int main()
@@ -56,7 +57,7 @@ int main()
 
 
 
-
+输出1到3阶乘的和
 #include <stdio.h>
 
 int main()
@@ -79,7 +80,7 @@ int main()
     return 0;
 }
 
-
+搜索7
 
 //int main()
 //{
@@ -113,5 +114,26 @@ int main()
 //	}
 //	return 0;
 //}
+
+
+
+
+最小公约数
+#include <stdio.h>
+
+
+int main()
+{
+	int a=0;
+	int b=0;
+	int m=0;
+	scanf("%d%d",&a,&b);
+	while(m=a%b)
+	{
+		a=b;
+		b=m;
+	}
+	printf("%d",b);
+}
 
 
