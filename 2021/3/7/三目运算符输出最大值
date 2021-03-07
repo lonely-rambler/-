@@ -16,3 +16,61 @@
 	return 0;
 	}
 	
+	
+	
+//switch 语句
+		int score = 0;
+		cout << "请输入电影的分数" << endl;
+		cin >>2 score;
+		switch (score)//switch判断时只能是整形或者字符型优点结构清晰，执行效果高。
+		{
+		case 3:
+			cout << "A" << endl;
+			break;
+		case 2:
+			cout << "B" << endl;
+			break;
+		case 1:
+			cout << "C" << endl;
+			break;
+		}
+
+//随机猜数字
+
+
+
+	srand((unsigned int)time(NULL));
+
+		int num = rand() % 100 + 1; //随机生成0~99的数；+1表示到100
+		int i = 0;
+		cout <<"请输入您要猜的数"  << endl;
+		int val = 0;
+		
+		
+		while (i<5)
+		{
+			cin >> val;
+			if (val > num)
+			{
+				cout << "猜大了" << endl;
+			}
+			else if (val < num)
+			{
+				cout << "猜小了" << endl;
+
+			}
+			else
+			{
+				cout << "猜对了" << endl;
+				break;
+			}
+			i++;
+
+		}
+			
+
+	
+	
+	
+	
+	
